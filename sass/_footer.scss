@@ -1,0 +1,136 @@
+@import "wars";
+
+.footer {
+  padding: 1.25rem 0 2rem 0;
+
+  background: #f7f7f7;
+  box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.05);
+}
+.footer-block {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  width: 100%;
+}
+.footer__logo-block {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: start;
+
+  flex-basis: 25%;
+  max-width: 25%;
+  &_img {
+    width: 100%;
+  }
+  .copyright-txt {
+    font-size: 0.875rem;
+    line-height: 1rem;
+
+    color: $colorBlack;
+  }
+}
+.footer__advant-block {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: start;
+
+  flex-basis: 25%;
+  max-width: 25%;
+  &-txt {
+    font-size: 0.875rem;
+    line-height: 1.1325rem;
+
+    color: $colorBlack;
+  }
+}
+.footer__menu {
+  flex-basis: 50%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer__menu-list {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-basis: 28%;
+  min-height: 6em;
+
+  text-decoration: none;
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.footer__menu-list:last-child {
+  flex-grow: 1;
+  align-items: flex-end;
+}
+
+.footer__contact-block_lower {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.footer__more-tel-img-bg {
+  background-color: #ffffff;
+  transition: background-color 0.2s linear;
+  &:hover {
+    background-color: rgba($colorBlue, 0.7);
+  }
+}
+.footer__menu-link {
+  font-size: 0.875rem;
+  line-height: 1.1325rem;
+  color: $colorBlack;
+}
+.footer__menu-link-glyanec {
+  font-size: 0.6875rem;
+  line-height: 0.8175rem;
+  text-transform: uppercase;
+  color: $colorBlack;
+}
+
+.footer__contact-block_telephones {
+  position: absolute;
+  top: -12rem;
+  right: -18px;
+  width: 219px;
+  height: 167px;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px -17px 34px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px -8px 34px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  z-index: 1;
+}
+.footer__contact-block_telephones::after {
+  content: "";
+  position: absolute;
+  right: 6px;
+  bottom: -33px;
+  border: 17px solid transparent;
+  border-top: 17px solid #ffffff;
+}
+
+//media screen
+@media screen and (max-width: 768px) {
+
+  .footer__contact-block_fb,.decspot-none{
+    display: none;
+  }
+}
+@media screen and (max-width: 920px) {
+  .footer__advant-block {
+    display: none;
+  }
+  .footer__menu {
+    flex-basis: 75%;
+  }
+}

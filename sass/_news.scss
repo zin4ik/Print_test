@@ -1,0 +1,90 @@
+@import "wars";
+
+.news {
+  width: 100%;
+  border-top: 1px solid #e8edf2;
+  padding: 2rem 0 3rem 0;
+  &-content {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.news__title {
+  margin: 0;
+  margin-bottom: 3rem;
+  padding: 0;
+
+  line-height: 2.625rem;
+  font-weight: 300;
+  text-align: center;
+
+  color: $colorBlack;
+}
+.news__news-block {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 3rem;
+  &_item {
+    width: 31%;
+    padding: 1.875rem 1rem;
+    text-decoration: none;
+    color: $colorBlack;
+
+    transition: all 0.2s linear;
+
+    &:hover {
+      box-shadow: 0px 14px 24px rgba(0, 0, 0, 0.05), 0px -1px 0px $colorBlue;
+    }
+    &:hover .new-txt:not(:hover) {
+      color: $colorBlue;
+      text-decoration: underline;
+    }
+  }
+}
+.new-date {
+  font-size: 0.875rem;
+  line-height: 1rem;
+
+  text-align: center;
+  text-decoration: none;
+  color: #bec7d1;
+}
+
+.new-txt {
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  text-align: center;
+  color: inherit;
+}
+.news-more {
+  padding: 0.5rem 1.3125rem;
+
+  font-size: 0.875rem;
+  line-height: 1rem;
+  text-align: center;
+  text-decoration: none;
+
+  background: none;
+  border: 1px solid $colorBlue;
+  color: $colorBlue;
+  transition: all 0.2s linear;
+  &:hover {
+    background: $colorBlue;
+    color: #ffffff;
+  }
+}
+
+//media screen
+@media screen and (max-width: 767px) {
+  .news__news-block {
+    flex-flow: column;
+  }
+  .news__news-block_item {
+    width: 100%;
+  }
+}

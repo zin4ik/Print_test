@@ -1,0 +1,79 @@
+@import "wars";
+
+//===product===/
+.product {
+  padding: 1.875rem;
+  &__title {
+    text-align: center;
+    font-weight: 300;
+    line-height: 2.625rem;
+    color: $colorBlack;
+    margin-bottom: 2.75rem;
+  }
+  &__product-block {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+.product-card {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+
+  width: 31%;
+  border: 1px solid #cccccc;
+  padding: 1.5625rem 1.875rem;
+  &__img-block {
+    width: 20%;
+    margin: 0;
+    margin-right: 2.375rem;
+
+    .img-product {
+      width: 100%;
+    }
+  }
+  &__info {
+    width: 75%;
+    display: block;
+    margin: 0;
+    &-title {
+      font-size: 1rem;
+      line-height: 1.18.75rem;
+      margin-top: 0;
+      margin-bottom: 0;
+      text-align: left;
+    }
+    &-descr {
+      display: flex;
+      flex-flow: row;
+      justify-content: start;
+
+      .card-info-list {
+        text-decoration: none;
+        list-style: none;
+        padding-left: 0;
+        padding-right: 1.5rem;
+
+        .card-info-item {
+          font-size: 0.875rem;
+          margin-top: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+///media screen
+@media screen and (max-width: 768px) {
+  .product__product-block {
+    flex-flow: column;
+    align-items: center;
+  }
+  .product-card {
+    width: 90%;
+    margin: 0.5rem;
+  }
+}

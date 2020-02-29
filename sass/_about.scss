@@ -1,0 +1,33 @@
+@import "wars";
+.about{
+  padding-bottom: 1rem;
+}
+.about__title-h1 {
+  margin-bottom:0.6875rem;
+
+  font-size: 2.25rem;
+  line-height: 2.625rem;
+  font-weight: 300;
+
+  text-align: center;
+  color: $colorBlack;
+}
+.about__title-h2 {
+    margin-bottom:2.125rem;
+
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    font-weight: 300;
+  
+    text-align: center;
+    color: $colorBlack;
+  }
+  .about__text{
+    font-size: 0.875rem;
+    line-height: 1rem;
+    font-weight: 300;
+  
+    text-align: center;
+    color: $colorBlack;
+
+  }

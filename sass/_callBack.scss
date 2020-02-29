@@ -1,0 +1,82 @@
+.call-back {
+  position: fixed;
+  bottom: 7.8125em;
+  right: 11em;
+  width: 6.75em;
+  height: 6.75em;
+
+  background-color: $colorBlue;
+
+  border-radius: 4rem;
+  cursor: pointer;
+
+
+  &_img {
+    position: absolute;
+    top: 1.125rem;
+    left: 2.3175rem;
+
+    width: 1.875em;
+  }
+
+  &_txt {
+    position: absolute;
+    top: 2.625rem;
+    font-size: 0.875rem;
+    line-height: 1rem;
+    text-align: center;
+
+    color: #ffffff;
+  }
+}
+
+.contact__call-back {
+  display: none;
+  align-items: center;
+  flex-flow: row;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 7.8125em;
+  right: 22em;
+  padding: 1.5rem;
+  background-color: $colorBlue;
+  z-index: 2;
+
+  &_input {
+    padding: 1rem;
+    font-size: 1.5rem;
+    border: none;
+  }
+  &_btn {
+    margin: 0.5rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border: none;
+  }
+}
+
+//media screen
+
+@media (max-width: 768px) {
+  .call-back{
+    bottom: 13em;
+    right: 2em;
+    width: 5.75em;
+    height: 5.75em;
+  }
+  .call-back_img{
+    top: 0.6rem;
+    left: 2.1rem;
+    width: 1.875em;
+  }
+  .call-back_txt{
+    top: 1.8rem;
+  }
+  .contact__call-back{
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    bottom: 19.8125em;
+    right: 3em;
+    padding: 0.5rem;
+  }
+}

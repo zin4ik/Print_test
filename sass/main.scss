@@ -1,0 +1,75 @@
+@import "about";
+@import "baner";
+@import "footer";
+@import "header";
+@import "news";
+@import "products";
+@import "wars";
+@import "callBack";
+
+html {
+  font-size: 16px;
+}
+
+body {
+  min-width: 320px;
+  max-width: 1920px;
+
+  margin: 0 auto;
+
+  font-family: "Roboto";
+  font-size: 1rem;
+
+  background-color: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.wrap {
+  width: 1200px;
+
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.h1 {
+  font-size: 2.25rem;
+}
+.h2 {
+  font-size: 1.5rem;
+}
+.h3 {
+  font-size: 1.125rem;
+}
+
+// Small devices (landscape phones, 576px and up)
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+  .wrap {
+    width: 100%;
+
+    margin: 0 auto;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+// @media (min-width: 768px) {
+
+// }
+// @media (min-width: 1200px) {
+//   .wrap {
+//     width: 1200px;
+
+//     margin: 0 auto;
+//     padding-left: 1rem;
+//     padding-right: 1rem;
+//   }
+// }
